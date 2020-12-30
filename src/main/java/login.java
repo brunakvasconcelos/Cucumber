@@ -2,9 +2,11 @@ import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class login {
     private WebDriver driver;
@@ -33,14 +35,14 @@ public class login {
 
     @Quando("^seleciono Entrar$")
     public void seleciono_Entrar() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        driver.findElement(By.id("widget75-submit")).click();
     }
 
     @Então("^visualizo a minha pagina de cliente$")
     public void visualizo_a_minha_pagina_de_cliente() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        //String texto = driver.findElement(By.xpath("//*[@id=\"profile-orders-2\"]/div[2]/div[1]")).getText();
+        String texto = driver.findElement(By.xpath("//div[@class='user-info']")).getText();
+       // Assert.assertEquals("Olá, bruna",texto);
     }
 }
 
