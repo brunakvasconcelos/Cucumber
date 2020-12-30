@@ -5,7 +5,7 @@ Eu quero fazer login
 Para que eu possa acessar minha aréa do cliente
 
 Cenario: : Deve fazer o login no site com sucesso
-Dado que estou acessando o site "www.bemol.com.br"
+  Dado que acessei o site "www.bemol.com.br"
 Quando clico em faça o login
 E informo o e-mail "bruna.vasconcelos@ham.org.br"
 E a senha "221204biel"
