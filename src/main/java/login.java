@@ -2,12 +2,11 @@
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-teste
+
     public class login {
         private WebDriver driver;
 
@@ -43,5 +42,6 @@ teste
             //String texto = driver.findElement(By.xpath("//*[@id=\"profile-orders-2\"]/div[2]/div[1]")).getText();
             String texto = driver.findElement(By.xpath("//div[@class='user-info']")).getText();
             // Assert.assertEquals("Olá, bruna",texto);
+
         }
         }

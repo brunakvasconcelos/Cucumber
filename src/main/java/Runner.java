@@ -5,9 +5,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\Bruna\\atividadeLogin",
+        features = {"C:\\Users\\Bruna\\atividadeLogin"},
         plugin = "pretty"
-       // monochrome = true,
+        //monochrome = true,
        // snippets = SnippetType.CAMELCASE
 )
 public class Runner {
