@@ -4,12 +4,9 @@ Como usuário
 Eu quero fazer login
 Para que eu possa acessar minha aréa do cliente
 
-Cenario: : Deve fazer o login no site com sucesso
-  Dado que acessei o site "www.bemol.com.br"
-  Quando clico em faça o login
-  E informo o e-mail "bruna.vasconcelos@ham.org.br"
-  E a senha "221204biel"
-  E seleciono Entrar
+ Cenario: : Fazer o login no site Bemol
+  Dado que faço o login
+  Quando insiro as credenciais
   Então visualizo a minha pagina de cliente
 
 
