@@ -1,4 +1,3 @@
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
@@ -12,6 +11,7 @@ public class login_steps {
 
     @Dado("^que faço o login$")
     public void que_faço_o_login() throws Throwable {
+        //abrindo navegador
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.bemol.com.br/login");
@@ -20,6 +20,7 @@ public class login_steps {
 
     @Quando("^insiro as credenciais$")
     public void insiro_as_credenciais() throws Throwable {
+        //logando no site
         driver.findElement(By.id("widget75-email")).sendKeys("bruna.vasconcelos@ham.org.br");
         driver.findElement(By.id("widget75-password")).sendKeys("221204biel");
         driver.findElement(By.id("widget75-submit")).click();
@@ -28,6 +29,7 @@ public class login_steps {
 
     @Então("^visualizo a minha pagina de cliente$")
     public void visualizo_a_minha_pagina_de_cliente() throws Throwable {
+        //validando
         String texto = driver.findElement(By.xpath("//div[@class='user-info']")).getText();
         Assert.assertEquals("",texto);
     }
