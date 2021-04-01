@@ -16,10 +16,11 @@
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
+        <version>4.0.0-beta-1</version>
     </dependency>
 
     <dependency>
@@ -34,16 +35,57 @@
         <version>4.13</version>
         <scope>test</scope>
     </dependency>
+
     <dependency>
         <groupId>info.cukes</groupId>
         <artifactId>cucumber-junit</artifactId>
         <version>1.2.5</version>
         <scope>compile</scope>
     </dependency>
+
+        <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-cucumber-jvm</artifactId>
+        <version>2.13.8</version>
+    </dependency>
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-junit4</artifactId>
+        <version>2.13.8</version>
+        <scope>test</scope>
+
+    </dependency>
+    <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
+        <version>3.6.3</version>
+    </dependency>
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-jvm-deps</artifactId>
+        <version>1.0.5</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-picocontainer</artifactId>
+        <version>1.2.5</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>3.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>com.vimalselvam</groupId>
+        <artifactId>cucumber-extentsreport</artifactId>
+        <version>3.0.2</version>
+    </dependency>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.13</version>
+        <version>4.12</version>
         <scope>compile</scope>
     </dependency>
 
